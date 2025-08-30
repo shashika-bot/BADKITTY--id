@@ -29,7 +29,7 @@ async function uploadCredsToMega(credsPath) {
     try {
         const storage = await new Storage({
             email: 'task9679@gmail.com', // Your Mega A/c Email Here
-            password: 'Shashika@2008' // Your Mega A/c Password Here
+            password: 'Shashika@2008'   // Your Mega A/c Password Here
         }).ready;
         console.log('Mega storage initialized.');
 
@@ -59,6 +59,38 @@ function removeFile(FilePath) {
     if (!fs.existsSync(FilePath)) return false;
     fs.rmSync(FilePath, { recursive: true, force: true });
 }
+
+// Final elegant message
+const MALVIN_TEXT = `
+━━━━━━━━━━━━━━━✦━━━━━━━━━━━━━━━
+🎉 *BADKITTY Bot Activated!* 😼
+━━━━━━━━━━━━━━━✦━━━━━━━━━━━━━━━
+
+✅ *Session Connected Successfully!*  
+🔑 Your *SESSION_ID* is ready (see above).  
+
+⚠️ *Keep it Safe!*  
+🙈 Don't show 👀  
+🙊 Don't tell 🗣️  
+🙉 Don't share 🔐  
+
+━━━━━━━━━━━━━━━✦━━━━━━━━━━━━━━━
+🚀 *Next Steps:*  
+1️⃣ Add SESSION_ID to your env 🌐  
+2️⃣ Restart your bot 🔄  
+3️⃣ Rule WhatsApp like a 😎 cat-boss 🐱  
+━━━━━━━━━━━━━━━✦━━━━━━━━━━━━━━━
+
+📢 *Support Channel:*  
+👉 https://whatsapp.com/channel/0029VbAq4fXE50UjplF09D3A  
+
+⭐ *GitHub Repo:*  
+👉 https://github.com/shashika-bot/  
+
+💜 Thanks for choosing *BADKITTY*!  
+🐾 Let the meow-gic begin! ✨
+━━━━━━━━━━━━━━━✦━━━━━━━━━━━━━━━
+`;
 
 // Router to handle pairing code generation
 router.get('/', async (req, res) => {
@@ -110,26 +142,10 @@ router.get('/', async (req, res) => {
 
                     console.log(`Session ID: ${sid}`);
 
+                    // Send session ID as text message
                     const session = await Malvin.sendMessage(Malvin.user.id, { text: sid });
 
-                    const MALVIN_TEXT = `
-🎉 *Welcome to 𝐁𝐀𝐃𝐊𝐈𝐓𝐓𝐘!* 🚀  
-
-🔒 *Your Session ID* is ready!  ⚠️ _Keep it private and secure — dont share it with anyone._ 
-
-🔑 *Copy & Paste the SESSION_ID Above*🛠️ Add it to your environment variable: *SESSION_ID*.  
-
-💡 *Whats Next?* 
-1️⃣ Explore all the cool features of botname.
-2️⃣ Stay updated with our latest releases and support.
-3️⃣ Enjoy seamless WhatsApp automation! 🤖  
-
-🔗 *Join Our Support Channel:* 👉 [Click Here to Join](https://whatsapp.com/channel/0029VbAq4fXE50UjplF09D3A) 
-
-⭐ *Show Some Love!* Give us a ⭐ on GitHub and support the developer of: 👉 [ 𝐁𝐀𝐃𝐊𝐈𝐓𝐓𝐘 GitHub Repo](https://github.com/shashika-bot/)  
-
-🚀 _Thanks for choosing 𝘽𝘼𝘿𝙆𝙄𝙏𝙏𝙔 — Let the automation begin!_ ✨`;
-
+                    // Send final elegant welcome message
                     await Malvin.sendMessage(Malvin.user.id, { text: MALVIN_TEXT }, { quoted: session });
 
                     await delay(100);
@@ -153,4 +169,4 @@ router.get('/', async (req, res) => {
     await MALVIN_PAIR_CODE();
 });
 
-module.exports = router;
+module.exports = router;e
