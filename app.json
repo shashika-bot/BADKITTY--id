@@ -1,0 +1,23 @@
+
+{
+    "name": "Blackwolf-md-sessions",
+    "description": "Web Session Generator",
+    "logo": "https://files.catbox.moe/mhiy1v.jpg",
+    "repository": "https://github.com/shashika2008/Blackwolf-md-sessions",
+    "keywords": ["Malvin-Tech"],
+    "success_url": "/", 
+    "buildpacks": [{ "url": "https://github.com/heroku/heroku-buildpack-nodejs#latest" } ],
+    "env": {      
+      "PORT": {
+        "description": "Port for web app.4000,5000,3000... any!",
+        "value": "5000",
+        "required": false 
+      },
+      "MESSAGE": {
+        "description": "Just Leave This Blank",
+        "value": "",
+        "required": false 
+      }
+    }   
+
+}

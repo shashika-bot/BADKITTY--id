@@ -1,0 +1,27 @@
+{
+  "name": "Blackwolf-md-sessions",
+  "version": "1.0.0",
+  "description": "Blackwolf-md-sessions",
+  "main": "./malvin.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "start": "node malvin.js",
+    "stop": "echo 'Use Replit stop button or Ctrl+C'",
+    "restart": "echo 'Use Replit restart button or Ctrl+C'"
+  },
+  "author": "Malvin Tech",
+  "license": "GPL-3.0 license",
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.18",
+    "awesome-phonenumber": "^2.67.0",
+    "body-parser": "^1.20.2",
+    "express": "^4.19.1",
+    "megajs": "^1.1.0",
+    "phone": "^3.1.30",
+    "pino": "^8.15.0",
+    "qrcode": "^1.5.3"
+  }
+}
