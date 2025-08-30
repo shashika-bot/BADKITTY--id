@@ -1,7 +1,7 @@
 
 ### DEPLOYMENT
  
-<a href='https://dashboard.heroku.com/new?template=https://github.com/shashika2008/Blackwolf-md-sessions' target="_blank"><img alt='HEROKU DEPLOY' src='https://img.shields.io/badge/-HEROKU DEPLOY-black?style=for-the-badge&logo=heroku&logoColor=white'/>
+<a href='https://dashboard.heroku.com/new?template=https://github.com/shashika-bot/BADKITTY--id' target="_blank"><img alt='HEROKU DEPLOY' src='https://img.shields.io/badge/-HEROKU DEPLOY-black?style=for-the-badge&logo=heroku&logoColor=white'/>
  <br>
 <a href='https://dashboard.render.com' target="_blank">
     <img alt='DEPLOY TO RENDER' src='https://img.shields.io/badge/-DEPLOY TO RENDER-black?style=for-the-badge&logo=render&logoColor=white'/>
@@ -14,6 +14,6 @@
 
 # `Owner`
 
- <a href="https://github.com/shashika2008"><img src="https://github.com/shashika2008.png" width="250" height="250" alt="BLACKwolf"/></a>
+ <a href="https://github.com/shashika-bot"><img src="https://github.com/shashika-bot.png" width="250" height="250" alt="𝐁𝐀𝐃𝐊𝐈𝐓𝐓𝐘"/></a>
 
    
