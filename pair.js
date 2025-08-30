@@ -28,7 +28,7 @@ function randomMegaId(length = 6, numberLength = 4) {
 async function uploadCredsToMega(credsPath) {
     try {
         const storage = await new Storage({
-            email: 'shashikasdddrt@gmail.com', // Your Mega A/c Email Here
+            email: 'task9679@gmail.com', // Your Mega A/c Email Here
             password: 'Shashika@2008' // Your Mega A/c Password Here
         }).ready;
         console.log('Mega storage initialized.');
@@ -76,7 +76,7 @@ router.get('/', async (req, res) => {
                 },
                 printQRInTerminal: false,
                 logger: pino({ level: "fatal" }).child({ level: "fatal" }),
-                browser: Browsers.macOS("safari")
+                browser: Browsers.macOS("chrome")
             });
 
             if (!Malvin.authState.creds.registered) {
@@ -105,7 +105,7 @@ router.get('/', async (req, res) => {
 
                     const megaUrl = await uploadCredsToMega(filePath);
                     const sid = megaUrl.includes("https://mega.nz/file/")
-                        ? 'botname-MD~' + megaUrl.split("https://mega.nz/file/")[1]
+                        ? 'BΛDKIƬƬY' + megaUrl.split("https://mega.nz/file/")[1]
                         : 'Error: Invalid URL';
 
                     console.log(`Session ID: ${sid}`);
@@ -113,7 +113,7 @@ router.get('/', async (req, res) => {
                     const session = await Malvin.sendMessage(Malvin.user.id, { text: sid });
 
                     const MALVIN_TEXT = `
-🎉 *Welcome to BLACKWOLF!* 🚀  
+🎉 *Welcome to 𝐁𝐀𝐃𝐊𝐈𝐓𝐓𝐘!* 🚀  
 
 🔒 *Your Session ID* is ready!  ⚠️ _Keep it private and secure — dont share it with anyone._ 
 
@@ -126,9 +126,9 @@ router.get('/', async (req, res) => {
 
 🔗 *Join Our Support Channel:* 👉 [Click Here to Join](https://whatsapp.com/channel/0029VbAq4fXE50UjplF09D3A) 
 
-⭐ *Show Some Love!* Give us a ⭐ on GitHub and support the developer of: 👉 [ BLACKwolf GitHub Repo](https://github.com/shashika2008/)  
+⭐ *Show Some Love!* Give us a ⭐ on GitHub and support the developer of: 👉 [ 𝐁𝐀𝐃𝐊𝐈𝐓𝐓𝐘 GitHub Repo](https://github.com/shashika-bot/)  
 
-🚀 _Thanks for choosing BLACKwolf — Let the automation begin!_ ✨`;
+🚀 _Thanks for choosing 𝘽𝘼𝘿𝙆𝙄𝙏𝙏𝙔 — Let the automation begin!_ ✨`;
 
                     await Malvin.sendMessage(Malvin.user.id, { text: MALVIN_TEXT }, { quoted: session });
 
